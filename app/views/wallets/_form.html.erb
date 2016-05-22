@@ -1,0 +1,54 @@
+<%= form_for(@wallet) do |f| %>
+  <% if @wallet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@wallet.errors.count, "error") %> prohibited this wallet from being saved:</h2>
+
+      <ul>
+      <% @wallet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :wallet_name %><br>
+    <%= f.text_field :wallet_name %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br>
+    <%= f.text_field :amount %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :commission_for_deposit %><br>
+    <%= f.text_field :commission_for_deposit %>
+  </div>
+  <div class="field">
+    <%= f.label :commission_for_deduction %><br>
+    <%= f.text_field :commission_for_deduction %>
+  </div>
+  <div class="field">
+    <%= f.label :transaction_costs %><br>
+    <%= f.text_field :transaction_costs %>
+  </div>
+  <div class="field">
+    <%= f.label :max_tranche %><br>
+    <%= f.text_field :max_tranche %>
+  </div>
+  <div class="field">
+    <%= f.label :min_tranche %><br>
+    <%= f.text_field :min_tranche %>
+  </div>
+  <div class="field">
+    <%= f.label :activity_status %><br>
+    <%= f.check_box :activity_status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  currency_name: MyString
+  amount: 1.5
+  bank_details: MyString
+  bank_details_secondary: MyString
+  description: MyText
+  commission_for_deposit: 1.5
+  commission_for_deduction: 1.5
+  transaction_costs: 1.5
+  max_tranche: 1.5
+  min_tranche: 1.5
+  activity_status: false
+
+two:
+  currency_name: MyString
+  amount: 1.5
+  bank_details: MyString
+  bank_details_secondary: MyString
+  description: MyText
+  commission_for_deposit: 1.5
+  commission_for_deduction: 1.5
+  transaction_costs: 1.5
+  max_tranche: 1.5
+  min_tranche: 1.5
+  activity_status: false

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Currency name:</strong>
+  <%= @wallet.wallet_name %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @wallet.amount %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @wallet.description %>
+</p>
+
+<p>
+  <strong>Commission for deposit:</strong>
+  <%= @wallet.commission_for_deposit %>
+</p>
+
+<p>
+  <strong>Commission for deduction:</strong>
+  <%= @wallet.commission_for_deduction %>
+</p>
+
+<p>
+  <strong>Transaction costs:</strong>
+  <%= @wallet.transaction_costs %>
+</p>
+
+<p>
+  <strong>Max tranche:</strong>
+  <%= @wallet.max_tranche %>
+</p>
+
+<p>
+  <strong>Min tranche:</strong>
+  <%= @wallet.min_tranche %>
+</p>
+
+<p>
+  <strong>Activity status:</strong>
+  <%= @wallet.activity_status %>
+</p>
+
+<%= link_to 'Edit', edit_wallet_path(@wallet) %> |
+<%= link_to 'Back', wallets_path %>
