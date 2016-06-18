@@ -1,4 +1,5 @@
 class WalletsController < ApplicationController
+  
   before_action :set_wallet, only: [:show, :edit, :update, :destroy]
 
   # GET /wallets
@@ -27,11 +28,10 @@ class WalletsController < ApplicationController
     @wallet = Wallet.new(wallet_params)
     respond_to do |format|
       if @wallet.save
-
-        format.html { redirect_to Currency.new,
+        format.html { redirect_to Currency.new(),
           notice: 'Запись валютного произведена успешно.
-          ИН записи' @wallet.params([:id]) '
-          Теперь создайте соответствуюшюю запись в таблице валют' }
+          Теперь создайте соответствуюшюю запись в таблице валют
+          '} 
         format.json { render :show, status: :created, location: @wallet }
       else
         format.html { render :new }

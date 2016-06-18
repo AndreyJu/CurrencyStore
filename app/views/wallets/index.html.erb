@@ -1,20 +1,20 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Wallets</h1>
-
+<h1>кошельки</h1>
+<div id="wallets">
 <table>
   <thead>
     <tr>
       <th>ID</th>
-      <th>Currency name</th>
-      <th>Amount</th>
-      <th>Description</th>
-      <th>Commission for deposit</th>
-      <th>Commission for deduction</th>
-      <th>Transaction costs</th>
-      <th>Max tranche</th>
-      <th>Min tranche</th>
-      <th>Activity status</th>
+      <th>Назва валюти</th>
+      <th>Кількість</th>
+      <th>Опис</th>
+      <th>Коммісія за введення коштів</th>
+      <th>Коммісія за виведення</th>
+      <th>Вартість транзакції</th>
+      <th>Максимальний транш</th>
+      <th>Мінімальний транш</th>
+      <th>Статус</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -34,12 +34,13 @@
         <td><%= wallet.activity_status %></td>
         <td><%= link_to 'Show', wallet %></td>
         <td><%= link_to 'Edit', edit_wallet_path(wallet) %></td>
-        <td><%= link_to 'Destroy', wallet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <%#=link_to 'Видалити', wallet, method: :delete, data: { confirm: 'Are you sure?' } %>
       </tr>
     <% end %>
   </tbody>
 </table>
-
+</div>
 <br>
+
 
 <%= link_to 'New Wallet', new_wallet_path %>

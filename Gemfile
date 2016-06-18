@@ -2,8 +2,8 @@ source 'https://rubygems.org'
 
 # CUSTOM
 #gem 'slim-rails'
-#gem 'devise'
-
+gem 'devise'
+#gem 'haml'
 
 
 

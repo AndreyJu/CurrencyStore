@@ -1,49 +1,41 @@
 <p id="notice"><%= notice %></p>
-
 <p>
-  <strong>Currency name:</strong>
+  <strong>Назва валюти:</strong>
   <%= @wallet.wallet_name %>
 </p>
-
 <p>
-  <strong>Amount:</strong>
+  <strong>Кількість:</strong>
   <%= @wallet.amount %>
 </p>
-
 <p>
-  <strong>Description:</strong>
+  <strong>Опис:</strong>
   <%= @wallet.description %>
 </p>
-
 <p>
-  <strong>Commission for deposit:</strong>
+  <strong>Коммісія за введення коштів:</strong>
   <%= @wallet.commission_for_deposit %>
 </p>
-
 <p>
-  <strong>Commission for deduction:</strong>
+  <strong>Коммісія за виведення:</strong>
   <%= @wallet.commission_for_deduction %>
 </p>
-
 <p>
-  <strong>Transaction costs:</strong>
+  <strong>Вартість транзакції:</strong>
   <%= @wallet.transaction_costs %>
 </p>
-
 <p>
-  <strong>Max tranche:</strong>
+  <strong>Максимальний транш:</strong>
   <%= @wallet.max_tranche %>
 </p>
-
 <p>
-  <strong>Min tranche:</strong>
+  <strong>Мінімальний транш:</strong>
   <%= @wallet.min_tranche %>
 </p>
-
 <p>
-  <strong>Activity status:</strong>
+  <strong>Статус:</strong>
   <%= @wallet.activity_status %>
 </p>
 
-<%= link_to 'Edit', edit_wallet_path(@wallet) %> |
-<%= link_to 'Back', wallets_path %>
+<%= link_to 'Редагувати', edit_wallet_path(@wallet) %> |
+<%= link_to 'Назад', wallets_path %>
+
